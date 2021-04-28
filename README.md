@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+## Front-end Componentizado :fa-graduation-cap:
+<p>
+    Código desenvolvido na Aula do Professor Matheus Benites no curso da Digital Innovation One
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+>Essas são algumas notas das aulas que separei para entender melhor os conceitos
 
-## Available Scripts
+## Objetivos da Aula
+1. **Entendendo Responsabilidades**
+2. **Transformando a Interface em Lego**
+3. **Transformando o nosso lego em Interface**
 
-In the project directory, you can run:
+### Entendo Responsabilidades
 
-### `yarn start`
+  * Quanto menor a responsabilidade de um componente, melhor ele é, melhor pra dar manutenção, pra escalar, pra expandir e etc.<br>
+  * O ideal é cada componente tenha uma responsabilidade única.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### Exemplo 
+!['Imagem de exemplo'](https://i.imgur.com/iB88QGq.png)
+>Fonte: Imagem capturada das aulas do Professor Matheus Benites
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<p>
+	Este componente Profile, possui uma única responsabilidade, que é mostrar os dados de perfil do usuário.
+</p>
 
-### `yarn test`
+#### Por que eu devo Componentizar?
+* Responsabilidade
+* Fácil Manutenção
+* Reusabilidade
+* Extensibilidade
+* Código mais inteligível e fácil de ler
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<p>
+	Foi construida uma aplicação de pesquisa de usuário no github, onde vamos consumir a API de endpoints da plataforma github.
+	Vamos passar um username de usuário e aplicação nos retornará os seguintes dados:
+</p>
 
-### `yarn build`
+* Dados do perfil do usuário
+* Os repositórios do usuário
+* Repositórios em que o usuário marcou com :tw-2b50:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Transformando a interface em lego :tw-1f3e2:
+<p>
+	Separar bem  a responsabilidade e montar  de um forma que forma que seja reutilizável.<br>
+	Mais por que lego ? Lego é aquele famoso jogo onde temos peças de vários formatos e tamanhos que vamos encaixando até chegarmos no nosso desenho final, se a peça não encaixa bem, é por que ela não faz parte daquele componente.<br>Com isto podemos trazer esta analogia para a programação, onde vamos dividir nossa aplicação em peças que consigam se encaixar perfeitamente umas com as outras, onde cada componente terá uma responsabilidade única, desta forma caímos naquela máxima que os professores nos ensinam, logo quando vamos aprender nossa primeira linguagem orientada a objetos, **"dividir para conquistar"**.
+</p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Transformando o nosso lego em interface
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p>
+	Agora após de termos dividido o problema, é a parte onde montamos o quebra-cabeças e vamos encaixando nossas peças
+</p>
